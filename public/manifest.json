@@ -1,0 +1,27 @@
+{
+  "short-name": "andrewbarbour.com",
+  "name": "andrewbarbour.com",
+  "icons": [
+    {
+      "src": "public/images/favicon.png?v=1.0",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "public/images/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start-url": "https://andrewbarbour.com",
+  "display": "fullscreen",
+  "version": "0.0.2",
+  "description": "Andrew Barbour | Software Engineer",
+  "theme_color": "#cd2653",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewjbarbour/personalsite.git"
+  },
+  "author": "Andrew Barbour",
+  "homepage": "https://andrewbarbour.com/"
+}
