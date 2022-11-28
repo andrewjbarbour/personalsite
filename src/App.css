@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 :root {
-  --sharp-red: #cd2653;
-  --main-black: #0f1111;
+  --nav-gray: #cd2653;
+  --main-black: #1c1e21;
+  --nav-gray: #535661;
+  /* --main-black: #0f1111; */
 }
 
 html {
@@ -17,7 +22,7 @@ html {
 
 body {
   font-family: Inter, sans-serif;
-  color: var(--main-black, #0f1111);
+  color: var(--main-black);
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0;
@@ -28,6 +33,7 @@ body {
 
 header h1 {
   font-size: 3.12rem;
+  color: var(--main-black);
   display: inline-block;
   margin-left: 3vw;
   font-weight: 500;
@@ -42,13 +48,15 @@ header h2 {
 
 #navbar {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 10vw;
   padding-bottom: 2vh;
 }
 
 nav a {
-  color: var(--sharp-red, #cd2653);
+  color: var(--nav-gray);
   text-decoration: none;
   font-size: 1.5rem;
   padding: 7px;
@@ -88,7 +96,7 @@ nav a:hover {
   margin-left: 1vw;
   margin-bottom: 10%;
   border: none;
-  border-top: 1px solid var(--sharp-red, #cd2653);
+  border-top: 1px solid var(--nav-gray);
   background-color: transparent;
 }
 
@@ -121,7 +129,7 @@ nav a:hover {
   margin-bottom: 0;
   margin-top: 0;
   border: none;
-  border-top: 1px solid var(--main-black, #0f1111);
+  border-top: 1px solid var(--main-black);
   background-color: transparent;
   opacity: 0.2;
 }
@@ -155,6 +163,12 @@ nav a:hover {
 
 #content-wrapper {
   min-height: 81vh !important;
+}
+
+.content-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
@@ -289,20 +303,21 @@ nav a:hover {
   display: flex;
   min-width: 100vw;
   margin-right: 0;
-  background: var(--sharp-red, #cd2653);
+  border-top: 1px solid #e5e7eb;
+  /* background: var(--nav-gray); */
   height: 20vh;
 }
 
 #main-footer-wrapper {
   display: flex;
-  color: #fff;
+  color: var(--main-black);
   align-self: center;
   font-size: 1.13rem;
 }
 
 #copyright-details {
   display: inline block;
-  color: #fff;
+  color: var(--main-black);
   margin-left: 4vw;
   width: 88vw;
 }

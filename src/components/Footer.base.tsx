@@ -9,7 +9,7 @@ export default function Footer() {
     <footer id="site-footer">
       <div id="main-footer-wrapper">
         <span id="copyright-details">
-          © {new Date().getFullYear()} designed & built by Andrew Barbour
+          © {new Date().getFullYear()} built by Andrew Barbour
         </span>
         <div id="back-to-top-wrapper">
           <a id="back-to-top-link" onClick={handleClick}>
